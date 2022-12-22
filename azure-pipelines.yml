@@ -11,7 +11,7 @@ steps:
 - task: AzureKeyVault@2
   inputs:
     azureSubscription: 'poc-personal-sub(993ee1db-8092-4f18-85af-7bbec41b5d45)'
-    KeyVaultName: 'akv-testsqldb'
+    KeyVaultName: 'akv-test-endpoint'
     SecretsFilter: '*'
     RunAsPreJob: false
 

@@ -1,4 +1,10 @@
 # Starter pipeline
+- task: AzureKeyVault@2
+  inputs:
+    azureSubscription: 'poc-personal-sub(993ee1db-8092-4f18-85af-7bbec41b5d45)'
+    KeyVaultName: 'akv-testsqldb'
+    SecretsFilter: '*'
+    RunAsPreJob: false
 # Start with a minimal pipeline that you can customize to build and deploy your code.
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml

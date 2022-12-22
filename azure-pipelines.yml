@@ -17,6 +17,10 @@ steps:
 
 - task: CmdLine@2
   inputs:
+    script: 'echo $(sqldbconnstring)'
+
+- task: CmdLine@2
+  inputs:
     script: 'echo $(sqldbconnstring) > secret.txt'
 
 - task: CopyFiles@2
